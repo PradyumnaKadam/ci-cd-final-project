@@ -1,38 +1,42 @@
-# CI/CD Tools and Practices Final Project Template
+# CI/CD Tools and Practices Final Project
 
-This repository contains the template to be used for the Final Project for the Coursera course **CI/CD Tools and Practices**.
+## Project Overview
 
-## Usage
+This project implements a RESTful Customer Accounts microservice and demonstrates Continuous Integration and Continuous Delivery (CI/CD) practices using automated testing, code quality checks, containerization, and cloud-native deployment tools.
 
-This repository is to be used as a template to create your own repository in your own GitHub account. No need to Fork it as it has been set up as a Template. This will avoid confusion when making Pull Requests in the future.
+## Technologies Used
 
-From the GitHub **Code** page, press the green **Use this template** button to create your own repository from this template.
+- **Python:** Microservice implementation and unit testing.
+- **Flask:** REST API development.
+- **Flake8:** Python code linting.
+- **Nose:** Automated unit testing.
+- **GitHub Actions:** Automated CI workflow for linting and tests.
+- **Docker:** Container image building.
+- **Tekton:** Cloud-native CI/CD tasks and pipeline automation.
+- **OpenShift:** Application deployment and pipeline execution.
 
-Name your repo: `ci-cd-final-project`.
+## CI Workflow
+
+The GitHub Actions workflow checks out the repository, installs dependencies, runs Flake8 linting, and executes unit tests with Nose.
+
+## Tekton Tasks
+
+The Tekton configuration defines cleanup and unit-testing tasks for the project.
 
 ## Setup
 
-After entering the lab environment you will need to run the `setup.sh` script in the `./bin` folder to install the prerequisite software.
+Run the setup script in the lab environment:
 
 ```bash
 bash bin/setup.sh
 ```
 
-Then you must exit the shell and start a new one for the Python virtual environment to be activated.
-
-```bash
-exit
-```
-
-## Tasks
-
+Then exit the shell and open a new terminal to activate the Python virtual environment.
 
 ## License
 
-Licensed under the Apache License. See [LICENSE](/LICENSE)
+Licensed under the Apache License. See [LICENSE](LICENSE).
 
 ## Author
 
 Skills Network
-
-## <h3 align="center"> © IBM Corporation 2023. All rights reserved. <h3/>
